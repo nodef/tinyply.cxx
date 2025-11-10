@@ -1,0 +1,7 @@
+assets/
+source/example-utils.hpp
+source/example.cpp
+source/tests.cpp
+third-party/
+.travis.yml
+appveyor.yml

@@ -9,9 +9,31 @@ GCC + Clang | [![Build status](http://travis-ci.org/ddiakopoulos/tinyply.svg?bra
 VS2019 | [![Build status](https://ci.appveyor.com/api/projects/status/kgcy3oec0cnhyht4/branch/master?svg=true)](https://ci.appveyor.com/project/ddiakopoulos/tinyply/branch/master) |
 
 
-A single-header, zero-dependency (except the C++ STL) __public domain__ implementation of the PLY mesh file format. An overview and definition of the file format is available [here](http://paulbourke.net/dataformats/ply/). This format is often used in the computer vision and graphics communities for its relative simplicity, ability to support arbitrary mesh attributes, and binary modes. Famously, PLY is used to distribute 3D models in the [Stanford 3D Scanning Repository](http://graphics.stanford.edu/data/3Dscanrep/), including the bunny. 
+A single-header, zero-dependency (except the C++ STL) __public domain__ implementation of the PLY mesh file format, by [Dimitri Diakopoulos](https://github.com/ddiakopoulos). An overview and definition of the file format is available [here](http://paulbourke.net/dataformats/ply/). This format is often used in the computer vision and graphics communities for its relative simplicity, ability to support arbitrary mesh attributes, and binary modes. Famously, PLY is used to distribute 3D models in the [Stanford 3D Scanning Repository](http://graphics.stanford.edu/data/3Dscanrep/), including the bunny. 
 
 The library is written in C++11 and requires a recent compiler (GCC 4.8+ / VS2015+ / Clang 2.9+). Tinyply supports exporting and importing PLY files in both binary and ascii formats. Tinyply supports filesizes >= 4gb and can read big-endian binary files (but not write them). 
+
+## Installation
+
+Run:
+```bash
+$ npm i tinyply.cxx
+```
+
+And then include `tinyply.h` as follows:
+```cxx
+#include "node_modules/tinyply.cxx/source/tinyply.h"
+```
+  
+You may also want to include `tinyply.cpp` as follows:
+```cxx
+#ifndef __TINYPY_CXX__
+#define __TINYPY_CXX__
+#include "node_modules/tinyply.cxx/source/tinyply.cpp"
+#endif
+```
+
+This will include both the function declaration and their definitions into a single file.
 
 ## Getting Started
 
@@ -44,4 +66,11 @@ tinyply not what you're looking for? tinyply trades some performance for simplic
 
 ## License
 
-This software is in the public domain. Where that dedication is not recognized, you are granted a perpetual, irrevocable license to copy, distribute, and modify this file as you see fit. If these terms are not suitable to your organization, you may choose to license it under the terms of the 2-clause simplified BSD. 
+This software is in the public domain. Where that dedication is not recognized, you are granted a perpetual, irrevocable license to copy, distribute, and modify this file as you see fit. If these terms are not suitable to your organization, you may choose to license it under the terms of the 2-clause simplified BSD.
+
+<br>
+<br>
+
+
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/tinyply.cxx)
