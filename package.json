@@ -1,0 +1,24 @@
+{
+  "name": "tinyply.cxx",
+  "version": "2.3.4",
+  "description": ":earth_africa: C++11 ply 3d mesh format importer & exporter; Dimitri Diakopoulos (2015).",
+  "keywords": [
+    "c",
+    "library",
+    "ply",
+    "3d",
+    "mesh",
+    "importer",
+    "exporter"
+  ],
+  "homepage": "https://github.com/nodef/tinyply.cxx#readme",
+  "bugs": {
+    "url": "https://github.com/nodef/tinyply.cxx/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/tinyply.cxx.git"
+  },
+  "license": "CC0-1.0",
+  "main": "tinyply.h"
+}
